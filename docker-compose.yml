@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+#--------------
+  restapi:
+    build:
+      context: restapi
+      dockerfile: Dockerfile
+    container_name: restapi
+    ports:
+      - 9000:80
+    restart: always
